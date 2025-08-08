@@ -1,5 +1,5 @@
 # 🛡 Ultimate File Upload Bypass – Optimized Edition + MIME-Type Reference
-_By CybrX1337 – Red Team Focus_
+_By CybrX1337 – BURPSUITE_
 
 ⚠ **Educational / Authorized Testing Only**
 
