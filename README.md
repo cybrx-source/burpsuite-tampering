@@ -5,6 +5,31 @@ _By CybrX1337 – Red Team Focus_
 
 ---
 
+# 📑 Table of Contents
+
+1. [Common Executable Extensions](#1️⃣-common-executable-extensions-15)
+2. [Mixed Case / Unicode Homoglyphs](#2️⃣-mixed-case--unicode-homoglyphs-5)
+3. [Null Byte & Control Character Injection](#3️⃣-null-byte--control-character-injection-5)
+4. [Double Extensions](#4️⃣-double-extensions-5)
+5. [Fragment, Comment & Semicolon Tricks](#5️⃣-fragment-comment--semicolon-tricks-5)
+6. [Path Traversal + Upload](#6️⃣-path-traversal--upload-5)
+7. [Encoded Extensions](#7️⃣-encoded-extensions-5)
+8. [Apache / Nginx Double Parsing](#8️⃣-apache--nginx-double-parsing-5)
+9. [Exotic Extensions Parsed as PHP](#9️⃣-exotic-extensions-parsed-as-php-5)
+10. [Dangerous .htaccess Uploads](#🔟-dangerous-htaccess-uploads-5)
+11. [Polyglot Payloads](#1️⃣1️⃣-polyglot-payloads-5)
+12. [MIME-Type Abuse](#1️⃣2️⃣-mime-type-abuse-5)
+13. [Archive Tricks](#1️⃣3️⃣-archive-tricks-5)
+14. [Legacy Apache mod_mime Confusion](#1️⃣4️⃣-legacy-apache-mod_mime-confusion-5)
+15. [IIS / NTFS Alternate Data Streams](#1️⃣5️⃣-iis--ntfs-alternate-data-streams-5)
+16. [SVG + PHP Polyglots](#1️⃣6️⃣-svg--php-polyglots-5)
+17. [Malformed Headers in Upload](#1️⃣7️⃣-malformed-headers-in-upload-5)
+18. [HTTP Parameter Pollution in Upload](#1️⃣8️⃣-http-parameter-pollution-in-upload-5)
+19. [Chunked Transfer Encoding Tricks](#1️⃣9️⃣-chunked-transfer-encoding-tricks-5)
+20. [Rare Unicode Dot / Slash Bypasses](#2️⃣0️⃣-rare-unicode-dot--slash-bypasses-5)
+
+---
+
 ## 1️⃣ Common Executable Extensions (15)
 .php  
 .phtml  
